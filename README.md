@@ -23,11 +23,10 @@ Validator CSS: https://jigsaw.w3.org/css-validator/
 <img width="1920" height="1200" alt="Screenshot 2025-09-29 134405" src="https://github.com/user-attachments/assets/12db9896-2ca7-40ea-8f15-b0d40f733447" />
 
 
-# PERTNAYAAN DAN TUGAS PRAKTIKUM 2
-
+📝 Pertanyaan dan Tugas Praktikum 2 – CSS Dasar
 1. Eksperimen Mengubah dan Menambah Properti CSS
-Saya mencoba melakukan beberapa eksperimen di file CSS untuk melihat perbedaan hasil di browser.
-Contoh kode CSS setelah diubah:
+
+Saya mencoba melakukan eksperimen di file CSS untuk melihat perbedaan hasil di browser.
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -53,13 +52,47 @@ nav {
 }
 
 
+Hasil Eksperimen:
+
+Background halaman berubah menjadi abu-abu muda.
+
+Navbar tampil lebih modern dengan efek bayangan.
+
+Tombol lebih besar, sudut tumpul, dan berubah warna saat di-hover.
+
 2. Perbedaan h1 { ... } dengan #intro h1 { ... }
-h1 { ... } adalah selector elemen biasa, berlaku untuk semua <h1> di halaman.
-#intro h1 { ... } adalah selector yang lebih spesifik, hanya berlaku untuk elemen <h1> yang ada di dalam elemen yang memiliki id="intro".
+
+h1 { ... } → selector elemen, berlaku untuk semua elemen <h1> di halaman.
+
+#intro h1 { ... } → selector lebih spesifik, hanya berlaku untuk elemen <h1> yang berada di dalam elemen yang memiliki id="intro".
+
+Contoh:
+
+h1 {
+  color: blue;
+}
+
+#intro h1 {
+  color: red;
+}
+
+<h1>Judul Umum</h1>
+<div id="intro">
+  <h1>Judul Intro</h1>
+</div>
+
+
+Hasil di Browser:
+
+Judul di luar #intro berwarna biru.
+
+Judul di dalam #intro berwarna merah, karena selector lebih spesifik mengalahkan aturan umum.
 
 3. Prioritas Internal vs Eksternal vs Inline CSS
 
-Saya menguji tiga jenis penulisan CSS pada elemen <p> yang sama:
+Saya menguji prioritas CSS yang ditulis dalam tiga cara berbeda pada elemen <p> yang sama.
+
+Contoh:
 
 <head>
   <style>
@@ -71,9 +104,28 @@ Saya menguji tiga jenis penulisan CSS pada elemen <p> yang sama:
   <p style="color: red;">Teks Percobaan</p> <!-- Inline CSS -->
 </body>
 
+
+style.css:
+
+p { color: blue; }
+
+
+Hasil di Browser:
+Teks <p> ditampilkan dengan warna merah, karena Inline CSS memiliki prioritas tertinggi.
+
+Urutan Prioritas:
+
+Inline CSS → tertinggi
+
+Internal CSS
+
+Eksternal CSS → terendah
+
 4. Prioritas Antara ID Selector dan Class Selector
 
-Saya membuat contoh elemen <p> yang memiliki ID dan Class sekaligus:
+Saya membuat elemen <p> yang memiliki ID dan Class sekaligus.
+
+Contoh CSS:
 
 #paragraf-1 {
   color: blue;
@@ -85,14 +137,24 @@ Saya membuat contoh elemen <p> yang memiliki ID dan Class sekaligus:
   font-style: italic;
 }
 
-HTML
+
+Contoh HTML:
 
 <p id="paragraf-1" class="text-paragraf">Contoh Paragraf</p>
 
 
+Hasil di Browser:
 
+Warna teks menjadi biru karena aturan dari ID selector mengalahkan aturan class.
 
+Teks tetap italic karena properti itu hanya diatur oleh class dan tidak ditimpa oleh ID.
 
+📌 Kesimpulan Prioritas CSS
 
+Inline CSS → prioritas tertinggi.
 
+ID Selector → lebih kuat dibanding Class Selector.
 
+Class Selector → lebih kuat dibanding selector elemen biasa.
+
+Jika tingkat spesifisitas sama, aturan yang ditulis terakhir di file CSS yang akan diterapkan.
