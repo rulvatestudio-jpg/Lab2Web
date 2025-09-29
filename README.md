@@ -1,1 +1,25 @@
 # Lab2Web
+
+Tujuan
+Memahami konsep dasar CSS.
+Memahami aturan penulisan CSS (internal, eksternal, inline).
+Mengenal selector: elemen, class, dan id.
+Mampu menerapkan CSS pada halaman HTML.
+Persiapan
+Text editor: VSCode
+Browser untuk preview hasil
+Validator CSS: https://jigsaw.w3.org/css-validator/
+
+ 1.Membuat text menjadi ditengah dengan menggunakan metode text-align; center dan membuat sisanya menjadi italic dengan cara <i> </i>
+ <img width="1920" height="1200" alt="Screenshot 2025-09-29 130402" src="https://github.com/user-attachments/assets/1e630cb6-5d5a-43c4-b665-362a8ba85839" />
+
+ 2.Membuat text di paragraf kedua menjadi ditengah juga dengan cara yang sama dan menambahkan warna pada textnya dengan cara text-align; center; color #778FA
+<img width="1920" height="1200" alt="Screenshot 2025-09-29 132358" src="https://github.com/user-attachments/assets/e046bc1f-b8eb-472b-a6d3-fabab6440511" />
+
+3.Membuat Box Text di bagian navbar agar mempecantik web dengan cara menggunakan external css dengan <link rel="stylesheet" href="nama file css">
+<img width="1920" height="1200" alt="Screenshot 2025-09-29 132812" src="https://github.com/user-attachments/assets/1700f8c6-b14f-4a18-990d-c35d59ec58eb" />
+
+4.Membuat border dan memberi warna di bagian isi halaman dengan metode yang sama
+<img width="1920" height="1200" alt="Screenshot 2025-09-29 134405" src="https://github.com/user-attachments/assets/12db9896-2ca7-40ea-8f15-b0d40f733447" />
+
+
