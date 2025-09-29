@@ -23,3 +23,76 @@ Validator CSS: https://jigsaw.w3.org/css-validator/
 <img width="1920" height="1200" alt="Screenshot 2025-09-29 134405" src="https://github.com/user-attachments/assets/12db9896-2ca7-40ea-8f15-b0d40f733447" />
 
 
+# PERTNAYAAN DAN TUGAS PRAKTIKUM 2
+
+1. Eksperimen Mengubah dan Menambah Properti CSS
+Saya mencoba melakukan beberapa eksperimen di file CSS untuk melihat perbedaan hasil di browser.
+Contoh kode CSS setelah diubah:
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f2f2f2;     /* ubah warna latar belakang halaman */
+  line-height: 1.5;              /* tambahkan jarak antarbaris */
+}
+
+nav {
+  background: #007BFF;           /* ganti warna navbar jadi biru */
+  padding: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* efek bayangan pada navbar */
+}
+
+.button {
+  padding: 15px 30px;            /* perbesar padding tombol */
+  border-radius: 6px;            /* sudut tombol jadi tumpul */
+  font-weight: bold;             /* teks tombol jadi tebal */
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #0056b3;           /* warna tombol berubah saat di-hover */
+}
+
+
+2. Perbedaan h1 { ... } dengan #intro h1 { ... }
+h1 { ... } adalah selector elemen biasa, berlaku untuk semua <h1> di halaman.
+#intro h1 { ... } adalah selector yang lebih spesifik, hanya berlaku untuk elemen <h1> yang ada di dalam elemen yang memiliki id="intro".
+
+3. Prioritas Internal vs Eksternal vs Inline CSS
+
+Saya menguji tiga jenis penulisan CSS pada elemen <p> yang sama:
+
+<head>
+  <style>
+    p { color: green; }          /* Internal CSS */
+  </style>
+  <link rel="stylesheet" href="style.css"> <!-- Eksternal CSS -->
+</head>
+<body>
+  <p style="color: red;">Teks Percobaan</p> <!-- Inline CSS -->
+</body>
+
+4. Prioritas Antara ID Selector dan Class Selector
+
+Saya membuat contoh elemen <p> yang memiliki ID dan Class sekaligus:
+
+#paragraf-1 {
+  color: blue;
+  font-weight: bold;
+}
+
+.text-paragraf {
+  color: green;
+  font-style: italic;
+}
+
+HTML
+
+<p id="paragraf-1" class="text-paragraf">Contoh Paragraf</p>
+
+
+
+
+
+
+
+
